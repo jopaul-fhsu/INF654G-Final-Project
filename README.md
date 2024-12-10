@@ -1,6 +1,6 @@
-Contact List Progressive Web Application (PWA)
+### Contact List Progressive Web Application (PWA)
 
-- The Contact List App is a Progressive Web Application for managing and synchronizing contact lists across multiple accounts. It uses Firebase for secure user authentication and real-time data synchronization, and Progressive Web App (PWA) technology for offline capabilities and cross-platform compatibility. The app provides a seamless, native-like experience on both desktop and mobile devices.
+The Contact List App is a Progressive Web Application for managing and synchronizing contact lists across multiple accounts. It uses Firebase for secure user authentication and real-time data synchronization, and Progressive Web App (PWA) technology for offline capabilities and cross-platform compatibility. The app provides a seamless, native-like experience on both desktop and mobile devices.
 
 ## Features
 
