@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login & Registration</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  
+  <style>
+     .green.lighten-1 {
+    background-color: #43a047 !important;
+  }
+
+  .red.lighten-1 {
+    background-color: #e53935 !important;
+  }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background: #f5f5f5;
+    }
+    #auth-container {
+      width: 100%;
+      max-width: 400px;
+      padding: 20px;
+     margin: 10px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .hide {
+      display: none;
+    }
+    .card {
+      padding: 20px;
+    }
+    .center-align button {
+      width: 100%;
+    }
+
+/* Style for the banner */
+.status-banner {
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  z-index: 9999;
+  display: none; /* Initially hidden */
+}
+
+.status-banner.green {
+  background-color: #4caf50; /* Green for success */
+}
+
+.status-banner.red {
+  background-color: #f44336; /* Red for error */
+}
+
+  </style>
+</head>
+<body>
+     <!-- Status Banner -->
+ 
+   
+    <div id="auth-container" class="card z-depth-2">
+        <!-- Login Form -->
+        <div id="login-form">
+          <h4 class="center-align">Login</h4>
+          <div class="input-field">
+            <input type="email" id="login-email" required>
+            <label for="login-email">Email</label>
+          </div>
+          <div class="input-field">
+            <input type="password" id="login-password" required>
+            <label for="login-password">Password</label>
+          </div>
+          <div class="center-align">
+            <button id="login-btn" class="btn blue">Login</button>
+          </div>
+          <p class="center-align">
+            <a href="#!" id="show-register">Create Account</a> | 
+            <a href="#!" id="forgot-password" class="modal-trigger" data-target="forgot-password-modal">Forgot Password</a>
+          </p>
+        </div>
+    
+        <!-- Registration Form -->
+        <div id="register-form" class="hide">
+          <h4 class="center-align">Register</h4>
+          <div class="input-field">
+            <input type="email" id="register-email" required>
+            <label for="register-email">Email</label>
+          </div>
+          <div class="input-field">
+            <input type="password" id="register-password" required>
+            <label for="register-password">Password</label>
+          </div>
+          <div class="input-field">
+            <input type="password" id="confirm-password" required>
+            <label for="confirm-password">Confirm Password</label>
+          </div>
+          <div class="center-align">
+            <button id="register-btn" class="btn green">Register</button>
+          </div>
+          <p class="center-align">
+            <a href="#!" id="show-login">Already have an account? Login</a>
+          </p>
+        </div>
+        <div id="status-banner" class="status-banner"></div>
+      </div>
+
+<!-- Forgot Password Modal -->
+<div id="forgot-password-modal" class="modal">
+    <div class="modal-content">
+      <h4>Forgot Password</h4>
+      <p>Enter your email address to reset your password:</p>
+      <div class="input-field">
+        <input id="forgot-email" type="email" class="validate" required>
+        <label for="forgot-email">Email</label>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button id="send-reset-email" class="modal-close btn blue">Send</button>
+      <button class="modal-close btn grey">Cancel</button>
+    </div>
+  </div>
+  
+
+  <script>
+
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  
+  <script type="module" src="/assets/script.js"></script>
+
+</body>
+</html>
